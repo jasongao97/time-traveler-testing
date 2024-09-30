@@ -120,7 +120,7 @@ function App() {
           onMouseLeave={() => setHovering(null)}
           className="cursor-pointer hover:underline underline-offset-4 decoration-dotted"
         >
-          <a href="https://zairanliu.github.io/code-text-type-2/">Version 3</a>
+          <a href="https://zairanliu.github.io/code-text-type-v3/">Version 3</a>
         </span>
       </div>
     </div>
