@@ -28,18 +28,21 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       # Build the project
       - name: Build the project
         run: npm run build
 
+      # Configure Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       # Upload build artifacts
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: github-pages
-          path: dist
+          path: "./dist"
 
   deploy:
     needs: build
